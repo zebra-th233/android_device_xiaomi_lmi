@@ -54,17 +54,21 @@ void vendor_load_properties() {
     std::string product = GetProperty("ro.boot.product.hardware.sku", "");
 
     property_override("ro.oem_unlock_supported", "0");
-    property_override("ro.build.description", "wayne-user 8.1.0 OPM1.171019.011 V9.5.11.0.ODCCNFA release-keys");
-    property_override("ro.build.fingerprint", "xiaomi/wayne/wayne:8.1.0/OPM1.171019.011/V9.5.11.0.ODCCNFA:user/release-keys");
     if (region.find("CN") != std::string::npos) {
         property_override("ro.product.brand", "Xiaomi");
+        property_override("ro.build.description", "lmi-user 10 QKQ1.191117.002 V12.0.1.0.QJKCNXM release-keys");
+        property_override("ro.build.fingerprint", "Redmi/lmi/lmi:10/QKQ1.191117.002/V12.0.1.0.QJKCNXM:user/release-keys");
         if (product.find("pro") != std::string::npos) {
             property_override("ro.product.model", "Redmi K30 Pro Zoom Edition");
             property_override("ro.product.device", "lmipro");
+            property_override("ro.build.description", "lmipro-user 10 QKQ1.191117.002 V11.0.16.0.QJKCNXM release-keys");
+            property_override("ro.build.fingerprint", "Redmi/lmipro/lmipro:10/QKQ1.191117.002/V11.0.16.0.QJKCNXM:user/release-keys");
         } else {
             property_override("ro.product.model", "Redmi K30 Pro");
         }
     } else if (region.find("GLOBAL") != std::string::npos) {
         property_override("ro.product.model", "POCO F2 Pro");
+        property_override("ro.build.description", "lmi_global-user 10 QKQ1.191117.002 V12.0.4.0.QJKMIXM release-keys");
+        property_override("ro.build.fingerprint", "POCO/lmi_global/lmi:10/QKQ1.191117.002/V12.0.4.0.QJKMIXM:user/release-keys");
     }
 }
