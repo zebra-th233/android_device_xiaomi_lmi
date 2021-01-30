@@ -69,12 +69,8 @@ PRODUCT_PACKAGES += \
     BluetoothQti
 
 # Camera
-ifeq ($(ARROW_GAPPS), true)
 PRODUCT_PACKAGES += \
-    GCamGOPrebuilt
-else
-PRODUCT_PACKAGES += \
-    Snap
+    Camera2
 endif
 
 PRODUCT_COPY_FILES += \
