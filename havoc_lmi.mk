@@ -27,3 +27,7 @@ PRODUCT_CHARACTERISTICS := nosdcard
 BUILD_FINGERPRINT := "Redmi/lmi/lmi:11/RKQ1.200826.002/V12.2.1.0.RJKCNXM:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+WITH_GAPPS := true
+
+TARGET_GAPPS_ARCH := arm64
