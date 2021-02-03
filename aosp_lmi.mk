@@ -15,19 +15,15 @@ $(call inherit-product, device/xiaomi/lmi/device.mk)
 $(call inherit-product, vendor/havoc/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := havoc_lmi
+PRODUCT_NAME := aosp_lmi
 PRODUCT_DEVICE := lmi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi K30 Pro
 PRODUCT_MANUFACTURER := Xiaomi
-DEVICE_MAINTAINER := TH779, lamp216
+
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
 BUILD_FINGERPRINT := "Redmi/lmi/lmi:11/RKQ1.200826.002/V12.2.1.0.RJKCNXM:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-WITH_GAPPS := true
-
-TARGET_GAPPS_ARCH := arm64
