@@ -8,6 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/havoc_lmi.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_lmi-user \
-    havoc_lmi-userdebug \
-    havoc_lmi-eng
+    aosp_lmi-user \
+    aosp_lmi-userdebug \
+    aosp_lmi-eng
